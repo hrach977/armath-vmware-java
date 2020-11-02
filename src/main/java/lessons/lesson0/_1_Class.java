@@ -73,6 +73,15 @@ public class _1_Class {
         persons.add(new Student("pam", 19));
         persons.add(new Person("jill", 20));
 
+
+        for (Person p : persons) {
+            if (p instanceof Driver) {
+                System.out.println(p.name + " is instance of driver" );
+            } else {
+                System.out.println(p.name + " is NOT instance of driver" );
+            }
+        }
+
         Person a = new Person("a", 1);
 
         Person b = a;
