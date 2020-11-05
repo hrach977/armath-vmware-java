@@ -65,7 +65,7 @@ public class SimpleArithmetic {
 
         int[] sequence = new int[count];
         int index = 0;
-        while (index < count && scanner.hasNext()) {
+        while (index < count) {
             sequence[index] = scanner.nextInt();
             index++;
         }
