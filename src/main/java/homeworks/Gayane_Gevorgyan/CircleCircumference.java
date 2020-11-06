@@ -13,7 +13,7 @@ import java.util.Scanner;
                 int count = 0;
 
 
-                while(number.hasNext()){
+                while(number.hasNext() && count <= 4){
                     double radius = number.nextDouble();
 
                     if (radius > 0) {
