@@ -1,4 +1,4 @@
-package homeworks.Gayane_Gevorgyan;
+package homeworks.gayane.gevorgyan;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ class NumberDigitsSummation{
         System.out.print("Input number: ");
         int num = number.nextInt();
         int sum = 0;
-        while(){
+        while(num > 0){
             int k = num%10;
             sum += k;
             num = (num - k)/10;

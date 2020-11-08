@@ -1,4 +1,4 @@
-package homeworks.Gayane_Gevorgyan;
+package homeworks.gayane.gevorgyan;
 
 import java.util.Scanner;
 
