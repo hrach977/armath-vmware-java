@@ -2,13 +2,13 @@ package homeworks.gayane.gevorgyan;
 
 import java.util.Scanner;
 
-class AmountOfEvenNumbers{
+public class AmountOfEvenNumbers{
     public static void main(String[] args) {
         Scanner number = new Scanner(System.in);
         System.out.println("Print amount of even numbers in that array");
         System.out.print("Please input the size of the array: ");
         int size = number.nextInt();
-        int array[] = new int[size];
+        int[] array = new int[size];
         int amount = 0;
 
         System.out.print("Please input the integers: ");
