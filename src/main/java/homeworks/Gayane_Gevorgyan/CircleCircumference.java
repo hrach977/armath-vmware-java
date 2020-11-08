@@ -1,17 +1,17 @@
 package homeworks.Gayane_Gevorgyan;
 
 import java.util.Scanner;
+import java.lang.Math;
 
         public class CircleCircumference {
 
             public static double CircleCircumference(){
                 System.out.println("Calculating circumference of the circle…");
-                System.out.println("Please input the radius: " );
+                System.out.print("Please input the radius: ");
                 Scanner number = new Scanner(System.in);
                 double pi = 3.14;
                 double circum = 0.0;
                 int count = 0;
-
 
                 while(number.hasNext() && count <= 4){
                     double radius = number.nextDouble();
