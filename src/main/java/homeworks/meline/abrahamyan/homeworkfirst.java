@@ -293,7 +293,7 @@ public class homeworkfirst {
         }
 
     }
-    public static void main (String[]args){
+    public static void main (String[] args){
         System.out.println("Checking if the given number is a prime number…");
         Scanner sc = new Scanner(System.in);
         System.out.println("Please input a number: ");
