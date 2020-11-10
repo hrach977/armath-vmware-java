@@ -76,7 +76,6 @@ public class homeworkcecond {
            int number = sc.nextInt();
 
            correctNumber(number, startPoint, endPoint);
-
        }
    }
 
