@@ -1,7 +1,7 @@
 package homeworks.arusik.apinyan;
 import java.util.Scanner;
 public class CircumferenceOfCircle {
-
+//=============================================================================
     public static double circumferenceOfCircle() {
         System.out.println("Circumference of the circle");
         System.out.print("Input radius: ");
@@ -21,7 +21,7 @@ public class CircumferenceOfCircle {
         }
         return circumference;
     }
-
+//=======================================================================
     public static double radiusOfCircle() {
         System.out.println("Radius of the circle");
         System.out.println("Input area:");
@@ -40,6 +40,7 @@ public class CircumferenceOfCircle {
         }
         return radius;
     }
+ //=============================================================================
     public static double areaOfRectangle() {
         System.out.println("Area of the rectangle");
         System.out.println("Input side:");
@@ -59,8 +60,41 @@ public class CircumferenceOfCircle {
         return area;
 
     }
+//=================================================================================
+    public static void swapNum1Num2(){
+        System.out.println("Input the num1:");
+        Scanner scanner = new Scanner(System.in);
+        double num1 = scanner.nextDouble();
+        System.out.println("Input the num2:");
+        double num2 = scanner.nextDouble();
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+        System.out.println("num1 = " + num1 + " num2 = " + num2);
+    }
+ //=========================================================================
+public static void sumOfDigits(){
+        System.out.println("Input the int number >= 0 :");
+        int sum = 0;
+        int mod;
+        Scanner scanner = new Scanner(System.in);
+        int Num = scanner.nextInt();
+        int num = Num;
+        while (Num > 0) {
+            mod = Num % 10;
+            Num = (Num - mod)/10;
+            sum = sum + mod;
+        }
+
+        System.out.println("Summation of digits of  " + num + " is = " + sum);
+
+}
+
     public static void main(String[] args) {
+        //circumferenceOfCircle();
         //radiusOfCircle();
-        areaOfRectangle();
+        //areaOfRectangle();
+        //swapNum1Num2();
+        sumOfDigits();
     }
 }
