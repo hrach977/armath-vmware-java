@@ -1,4 +1,4 @@
-package homeworks.melineabrahamyan;
+package homeworks.meline.abrahamyan;
 
 import java.util.Scanner;
 
@@ -70,6 +70,24 @@ public class homeworkfirst {
         }
     }
   */
+   /*4
+    static void swapsTwoNumbers ( int firstNum, int secondNum) {
+        firstNum = firstNum + secondNum;
+        secondNum = firstNum - secondNum;
+        firstNum = firstNum - secondNum;
+        System.out.println ( "firstNum = " + firstNum);
+        System.out.println ( "secondNum = " + secondNum);
+    }
+
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        System.out.println ("firstNum = "+ x);
+        System.out.println ("secondNum = " + y);
+        swapsTwoNumbers(x,y);
+
+    }*/
     /*5
     static double sumDigits(int number) {
         int Sum = 0;
