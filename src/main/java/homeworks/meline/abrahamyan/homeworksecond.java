@@ -92,9 +92,10 @@ public class homeworksecond {
        int count=0;
 
        while(number1 > 0) {
-           number1 = number / 10;
+           mod = number1 % 10;
+           number1 = number1 / 10;
            count++;
-           mod = number % 10;
+
            if (mod % 2 == 0) {
                countEven++;
            } else {
@@ -105,7 +106,7 @@ public class homeworksecond {
        int[] indexEven = new int[countEven];
        int j=0, k=0;
       // int i = count -1;
-       for ( int i=count-1; i>=1; i--) {
+       for ( int i=count-1; i>=0; i--) {
            num = number /( (int) Math.pow(10, i));
            if (num % 2 == 0) {
                indexEven[j] = count - i;
@@ -115,13 +116,41 @@ public class homeworksecond {
                k++;
            }
        }
-       for (int i=0; i < countEven; i++ ) {
-           System.out.print(indexEven[i] + " ");
+       if (countEven==0) {
+           System.out.print("Even digits of the number are: There are no even digits ");
+       } else {
+
+           System.out.print("Even digits of the number are: ");
+           for (int i = 0; i < countEven; i++) {
+               if (i == 0) {
+                   System.out.print("[" + indexEven[i] + ", ");
+               }
+               if (i == countEven - 1) {
+                   System.out.print(+indexEven[i] + "]");
+               }
+               if (i > 0 && i < countEven - 1) {
+                   System.out.print(+indexEven[i] + ", ");
+               }
+           }
        }
        System.out.println();
-       for (int i=0; i < countOdd; i++ ) {
-           System.out.print(indexOdd[i] + " ");
+       if (countOdd==0) {
+           System.out.print("Odd digits of the number are: There are no odd digits ");
+       } else {
+           System.out.print("Odd digits of the number are: ");
+           for (int i = 0; i < countOdd; i++) {
+               if (i == 0) {
+                   System.out.print("[" + indexOdd[i] + ", ");
+               }
+               if (i == countOdd - 1) {
+                   System.out.print(+indexOdd[i] + "]");
+               }
+               if (i > 0 && i < countOdd - 1) {
+                   System.out.print(+indexOdd[i] + ", ");
+               }
+           }
        }
+
     }
 
     public static void main (String[] args){
