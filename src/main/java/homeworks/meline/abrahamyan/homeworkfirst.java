@@ -272,6 +272,7 @@ public class homeworkfirst {
 
  */
     static String  primeNumber(int number) {
+
         if (number == 2) {
             return "Yes!";
         }

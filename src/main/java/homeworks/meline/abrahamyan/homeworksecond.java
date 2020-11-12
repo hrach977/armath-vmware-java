@@ -2,7 +2,9 @@ package homeworks.meline.abrahamyan;
 
 import java.util.Scanner;
 
-public class homeworkcecond {
+import java.lang.Math;
+
+public class homeworksecond {
    /*
     static void correctNumber (int number, int startPoint, int endPoint) {
         while (number < startPoint || number > endPoint ) {
@@ -30,7 +32,7 @@ public class homeworkcecond {
 
     }
 */
-
+/*
        static void correctNumber(int number, int startPoint, int endPoint) {
            int counter = 1;
            while (number < startPoint || number > endPoint) {
@@ -77,5 +79,54 @@ public class homeworkcecond {
 
            correctNumber(number, startPoint, endPoint);
        }
+       */
+   public static void printEvenAndOddIndexes() {
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Please input a number: ");
+       int number = scanner.nextInt();
+       int mod;
+       int num;
+       int number1 = number;
+       int countOdd=0;
+       int countEven=0;
+       int count=0;
+
+       while(number1 > 0) {
+           number1 = number / 10;
+           count++;
+           mod = number % 10;
+           if (mod % 2 == 0) {
+               countEven++;
+           } else {
+               countOdd++;
+           }
+       }
+       int[] indexOdd = new int[countOdd];
+       int[] indexEven = new int[countEven];
+       int j=0, k=0;
+      // int i = count -1;
+       for ( int i=count-1; i>=1; i--) {
+           num = number /( (int) Math.pow(10, i));
+           if (num % 2 == 0) {
+               indexEven[j] = count - i;
+               j++;
+           } else {
+               indexOdd[k] = count - i;
+               k++;
+           }
+       }
+       for (int i=0; i < countEven; i++ ) {
+           System.out.print(indexEven[i] + " ");
+       }
+       System.out.println();
+       for (int i=0; i < countOdd; i++ ) {
+           System.out.print(indexOdd[i] + " ");
+       }
+    }
+
+    public static void main (String[] args){
+   printEvenAndOddIndexes();
    }
+}
+
 
