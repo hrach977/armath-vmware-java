@@ -117,10 +117,10 @@ public class homeworksecond {
            }
        }
        if (countEven==0) {
-           System.out.print("Even digits of the number are: There are no even digits ");
+           System.out.print("Even digits indexes of the number are: There are no even digits ");
        } else {
 
-           System.out.print("Even digits of the number are: ");
+           System.out.print("Even digits indexes of the number are: ");
            for (int i = 0; i < countEven; i++) {
                if (i == 0) {
                    System.out.print("[" + indexEven[i] + ", ");
@@ -135,9 +135,9 @@ public class homeworksecond {
        }
        System.out.println();
        if (countOdd==0) {
-           System.out.print("Odd digits of the number are: There are no odd digits ");
+           System.out.print("Odd digits indexes of the number are: There are no odd digits ");
        } else {
-           System.out.print("Odd digits of the number are: ");
+           System.out.print("Odd digits indexes of the number are: ");
            for (int i = 0; i < countOdd; i++) {
                if (i == 0) {
                    System.out.print("[" + indexOdd[i] + ", ");
