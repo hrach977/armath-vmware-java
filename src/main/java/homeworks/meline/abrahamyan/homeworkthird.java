@@ -17,24 +17,24 @@ abstract class Figure implements IDrawable {
 class Circle extends Figure {
     @Override
     void defineFigure() {
-        System.out.println("I am a Circle");
+        System.out.println("I am a Circle...");
     }
 
     @Override
     public void draw(){
-        System.out.println("Drawing Circle…");
+        System.out.println("Drawing Circe...");
     }
 }
 
 class Rectangle extends Figure {
     @Override
     void defineFigure() {
-        System.out.println("I am a Rectangle");
+        System.out.println("I am a Rectangle...");
     }
 
     @Override
     public void draw(){
-        System.out.println("Drawing Rectangle…");
+        System.out.println("Drawing Rectangle...");
     }
 }
 
