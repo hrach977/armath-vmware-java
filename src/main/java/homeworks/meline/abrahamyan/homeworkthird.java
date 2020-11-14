@@ -40,7 +40,6 @@ class Rectangle extends Figure {
 
 public class homeworkthird {
 
-
     public static void main(String[] args) {
         Figure k = new Circle();
         k.defineFigure();
