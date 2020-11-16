@@ -1,4 +1,4 @@
-package homeworks.gayane.gevorgyan;
+package homeworks.gayane.gevorgyan.homework2;
 //Write a program that checked if number N is in range [n, m]. Keep checking until correct number is inserted.
 
 import java.util.Scanner;

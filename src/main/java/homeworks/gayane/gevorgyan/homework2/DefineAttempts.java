@@ -1,4 +1,4 @@
-package homeworks.gayane.gevorgyan;
+package homeworks.gayane.gevorgyan.homework2;
 // Write a program that checked if number N is in range [n, m].
 // Keep checking until correct number is inserted. Define maximum number of attempts.
 
@@ -25,11 +25,13 @@ public class DefineAttempts {
             else {
                 System.out.println("Number " + number + " is out of the range [" + upperBound + ", " + lowerBound + "].  You are about to reach");
                 System.out.println("WARN: Maximum number of attempts is 4. Program will terminate if next value is invalid!");
-                System.out.println("Please try again: " + number);
+                System.out.print("Please try again: " );
+                number = input.nextInt();
                 break;
             }
-
         }
-        System.out.println("Number " + number + " belongs to range ["  + upperBound + ", " + lowerBound + "].");
+        if(number >= upperBound && number <= lowerBound){
+            System.out.println("Number " + number + " belongs to range ["  + upperBound + ", " + lowerBound + "].");
+        }
     }
 }

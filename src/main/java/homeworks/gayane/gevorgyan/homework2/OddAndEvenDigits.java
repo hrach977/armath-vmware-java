@@ -1,4 +1,4 @@
-package homeworks.gayane.gevorgyan;
+package homeworks.gayane.gevorgyan.homework2;
 
 //Write a program that prints odd and even digits of the number.
 
