@@ -40,8 +40,8 @@ public class BinaryUtil {
         return sb.toString();
     }
 
-    private static String showBitsOf(long number) {
-        int bitMask = (1 << 63);
+    public static String showBitsOf(long number) {
+        long bitMask = (1L << 63);
 //        int a = 1;
 //        int mask =  a<<31;
 
