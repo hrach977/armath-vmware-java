@@ -24,33 +24,27 @@ public class OddAndEvenDigits {
                 arrDigit[i] = number % 10;
                 number = (number - arrDigit[i]) / 10;
             }
-
+            System.out.print("Even digits of the number are: [");
+            for(int i = countDigit-1; i >=0;  --i) {
+                if (arrDigit[i] % 2 == 0) {
+                    System.out.print(arrDigit[i] + ",");
+                    ++even;
+                }
+            }
+        System.out.print("]");
             if(even == 0) {
                 System.out.println("Even digits of the number are: There are no even digits");
             }
-            else{
-                System.out.print("Even digits of the number are: [");
-                for(int i = countDigit-1; i >=0;  --i) {
-                    if (arrDigit[i] % 2 == 0) {
-                        System.out.print(arrDigit[i] + ",");
-                        ++even;
-                    }
-                }
-                System.out.println("]");
+        System.out.print("Odd digits of the number are: [");
+        for(int i = countDigit-1; i >= 0;  --i) {
+            if (arrDigit[i] % 2 == 1) {
+                System.out.print(arrDigit[i] + ",");
+                ++odd;
             }
-
-        if(odd == 0) {
-            System.out.println("Odd digits of the number are: There are no odd digits");
         }
-        else{
-            System.out.print("Odd digits of the number are: [");
-            for(int i = countDigit-1; i >= 0;  --i) {
-                if (arrDigit[i] % 2 == 1) {
-                    System.out.print(arrDigit[i] + ",");
-                    ++odd;
-                }
-            }
-            System.out.println("]");
+        System.out.print("]");
+        if(odd == 0) {
+            System.out.println("Odd digits of the number are: There are no even digits");
         }
     }
 }
