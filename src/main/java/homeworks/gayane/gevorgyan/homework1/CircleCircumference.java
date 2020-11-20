@@ -23,6 +23,7 @@ import java.lang.Math;
                     }
                     else if(count == 3){
                         System.out.println("WARN: Maximum number of attempts is 4. Program will terminate if next value is invalid!");
+                        break;
                     }
                     else {
                         count++;
@@ -31,6 +32,7 @@ import java.lang.Math;
                     System.out.println("ERROR: Maximum number of attempts is reached. Terminating the program!!!");
                 }
                 return circum;
+
 
             }
             public static void main(String[] args) {

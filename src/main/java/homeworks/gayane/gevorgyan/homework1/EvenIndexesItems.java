@@ -8,7 +8,7 @@ public class EvenIndexesItems{
         System.out.print("Please input the size of the array: ");
         Scanner number = new Scanner(System.in);
         int size = number.nextInt();
-        int array[] = new int[size];
+        int[] array = new int[size];
 
         System.out.print("Please input the integers: ");
         for(int i = 0; i < size; ++i){
@@ -17,8 +17,9 @@ public class EvenIndexesItems{
         System.out.print("Even indexes items: ");
         for(int i = 0; i < array.length; ++i){
             if(i % 2 == 0){
-                System.out.print(array[i] + ", ");
+                System.out.print(array[i] + " ");
             }
+
         }
 
     }

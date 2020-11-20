@@ -10,6 +10,7 @@ class SwapTwoNumbers{
         System.out.print("Input is number 2: ");
         int number_2 = number.nextInt();
         System.out.println("Number 1 = " + number_1 + ",  " + "Number 2 = " + number_2);
-        System.out.println("Number 1 = " + (number_1 + number_2 - number_1) + ",  " + "Number 2 = " + (number_1 + number_2 - number_2));
+
+        System.out.println("Number 1 = " + number_2 + ",  " + "Number 2 = " +  number_1);
     }
 }

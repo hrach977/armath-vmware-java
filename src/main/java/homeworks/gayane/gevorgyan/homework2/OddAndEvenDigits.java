@@ -27,24 +27,24 @@ public class OddAndEvenDigits {
             System.out.print("Even digits of the number are: [");
             for(int i = countDigit-1; i >=0;  --i) {
                 if (arrDigit[i] % 2 == 0) {
-                    System.out.print(arrDigit[i] + ",");
+                    System.out.print(arrDigit[i] + " ");
                     ++even;
                 }
             }
-        System.out.print("]");
+        System.out.println("]");
             if(even == 0) {
-                System.out.println("Even digits of the number are: There are no even digits");
+                System.out.print("Even digits of the number are: There are no even digits");
             }
         System.out.print("Odd digits of the number are: [");
         for(int i = countDigit-1; i >= 0;  --i) {
             if (arrDigit[i] % 2 == 1) {
-                System.out.print(arrDigit[i] + ",");
+                System.out.print(arrDigit[i] + " ");
                 ++odd;
             }
         }
         System.out.print("]");
         if(odd == 0) {
-            System.out.println("Odd digits of the number are: There are no even digits");
+            System.out.print("Odd digits of the number are: There are no even digits");
         }
     }
 }

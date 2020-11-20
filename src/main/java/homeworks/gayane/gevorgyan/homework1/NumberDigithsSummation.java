@@ -11,7 +11,7 @@ class NumberDigitsSummation{
         while(num > 0){
             int k = num%10;
             sum += k;
-            num = (num - k)/10;
+            num = num/10;
         }
         System.out.println("Summation of digits of the input number: " +  sum);
     }

@@ -6,23 +6,25 @@ public class PrimNumber{
     public static void main(String[] args) {
         System.out.println("Checking if the given number is a prime number…");
         Scanner num = new Scanner(System.in);
-        System.out.println("Please input a number: ");
+        System.out.print("Please input a number: ");
         int number = num.nextInt();
         int div = 2;
-        boolean k = false;
+        boolean isPrimeNumber = true;
 
-        while (div <= number / 2 && number > 1) {
+        while (div <= number / 2  &&  number >= 2) {
             if (number % div == 0) {
-                k = true;
+                isPrimeNumber = false;
                 System.out.println("No...");
                 break;
             }
             else{
                 ++div;
             }
+
         }
-        if(!k){
+        if(isPrimeNumber){
             System.out.println("Yes!");
         }
+
     }
 }

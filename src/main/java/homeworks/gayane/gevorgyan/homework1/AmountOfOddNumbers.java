@@ -8,7 +8,7 @@ public class AmountOfOddNumbers{
         System.out.println("Print amount of odd numbers in that array");
         System.out.print("Please input the size of the array: ");
         int size = number.nextInt();
-        int array[] = new int[size];
+        int[] array = new int[size];
         int amount = 0;
 
         System.out.print("Please input the integers: ");
