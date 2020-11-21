@@ -43,7 +43,7 @@ public class rectangle {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor( String color ) {
         if (!color.equals("black")) {
             this.color = color;
         }
