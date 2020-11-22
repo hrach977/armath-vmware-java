@@ -1,22 +1,33 @@
 package homeworks.arusik.apinyan.clases;
 
 interface IDrawable {
-    void Draw ();
+    void draw ();
 }
-abstract class Figure implements homeworks.arusik.apinyan.clases.IDrawable {
-    void defineFigure() {
-
+abstract class Figure implements IDrawable {
+    public void draw() {
+        System.out.println("I'm a Figure");
     }
+    abstract void defineFigure();
 }
-abstract class Circle implements homeworks.arusik.apinyan.clases.IDrawable {
+ class Circle extends Figure {
     void defineFigure() {
         System.out.println("I'm a Circle");
     }
+    public void draw(){
+        System.out.println("Drawing Circle");
+    }
 }
 
-abstract class Rectangle implements homeworks.arusik.apinyan.clases.IDrawable {
+ class Rectangle extends Figure {
     void defineFigure() {
         System.out.println("I'm a Rectangle");
     }
+     public void draw(){
+         System.out.println("Drawing Rectangle");
+     }
 }
+
+
+
+
 
