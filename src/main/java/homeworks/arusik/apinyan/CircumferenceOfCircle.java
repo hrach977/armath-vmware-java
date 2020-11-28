@@ -1,4 +1,6 @@
 package homeworks.arusik.apinyan;
+
+import java.util.Locale;
 import java.util.Scanner;
 public class CircumferenceOfCircle {
 //=============================================================================
@@ -6,9 +8,10 @@ public class CircumferenceOfCircle {
         System.out.println("Circumference of the circle");
         System.out.print("Input radius: ");
         Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
 
         final double pi = 3.14;
-        double circumference = 0;
+        double circumference = 0.0;
         while (scanner.hasNext()) {
             double radius = scanner.nextDouble();
             if (radius < 0) {
@@ -26,6 +29,7 @@ public class CircumferenceOfCircle {
         System.out.println("Radius of the circle");
         System.out.println("Input area:");
         Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
         final double pi = 3.14;
         double radius = 0;
         while (scanner.hasNext()){
@@ -136,10 +140,10 @@ public static void printOddNumbers() {
 
     public static void main(String[] args) {
         //circumferenceOfCircle();
-        //radiusOfCircle();
+        radiusOfCircle();
         //areaOfRectangle();
         //swapNum1Num2();
         //sumOfDigits();
-            printOddNumbers();
+            //printOddNumbers();
     }
 }
