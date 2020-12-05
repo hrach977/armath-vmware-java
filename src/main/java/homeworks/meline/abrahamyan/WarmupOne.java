@@ -9,7 +9,7 @@ public class WarmupOne {
 //    front22("abc") → "ababcab"
 
 
-    public String front22(String str) {
+    public static String front22(String str) {
         if (str.length() < 2) {
             return str + str + str;
         }
@@ -25,7 +25,7 @@ public class WarmupOne {
 //    startHi("hi") → true
 //    startHi("hello hi") → false
 
-    public boolean startHi(String str) {
+    public static boolean startHi(String str) {
         if (str.length() < 2) {
             return false;
         }
@@ -42,7 +42,7 @@ public class WarmupOne {
 //    icyHot(2, 120) → false
 
 
-    public boolean icyHot(int temp1, int temp2) {
+    public static boolean icyHot(int temp1, int temp2) {
 
         return ((temp1 > 100 && temp2 < 0) || (temp2 > 100 && temp1 < 0));
     }
@@ -55,7 +55,7 @@ public class WarmupOne {
 //        in1020(21, 12) → true
 //        in1020(8, 99) → false
 
-    public boolean in1020(int a, int b) {
+    public static boolean in1020(int a, int b) {
         return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
     }
 //    We'll say that a number is "teen" if it is in the range 13..19 inclusive.
@@ -66,7 +66,7 @@ public class WarmupOne {
 //    hasTeen(20, 19, 10) → true
 //    hasTeen(20, 10, 13) → true
 
-    public boolean hasTeen(int a, int b, int c) {
+    public static boolean hasTeen(int a, int b, int c) {
         return (a>=13 && a<=19) || (b>=13 && b<=19) || (c>=13 && c<=19);
     }
 //    We'll say that a number is "teen" if it is in the range 13..19 inclusive.
@@ -76,7 +76,7 @@ public class WarmupOne {
 //    loneTeen(13, 99) → true
 //    loneTeen(21, 19) → true
 //    loneTeen(13, 13) → false
-    public boolean loneTeen(int a, int b){
+    public static boolean loneTeen(int a, int b){
         boolean abool = (a>=13 && a<=19);
         boolean bbool = (b>=13 && b<=19);
         return (abool && !bbool) || (!abool && bbool);
@@ -89,7 +89,7 @@ public class WarmupOne {
 //         delDel("adelHello") → "aHello"
 //         delDel("adedbc") → "adedbc"
 
-    public String delDel(String str) {
+    public static String delDel(String str) {
         if ((str.length()>=4) && str.substring(1,4).equals("del")) {
             return str.substring(0,1)+str.substring(4,str.length());
         }
@@ -105,7 +105,7 @@ public class WarmupOne {
 //    mixStart("pix snacks") → true
 //    mixStart("piz snacks") → false
 
-    public boolean mixStart(String str) {
+    public static boolean mixStart(String str) {
         if (str.length()>=3 && str.substring(1,3).equals("ix")){
             return true;
         }
@@ -120,7 +120,7 @@ public class WarmupOne {
 //    startOz("bzoo") → "z"
 //    startOz("oxx") → "o"
 
-    public String startOz(String str) {
+    public static String startOz(String str) {
         String st = "";
         if (str.length() >= 1 && str.charAt(0)=='o') {
             st = st + str.charAt(0);
@@ -139,7 +139,7 @@ public class WarmupOne {
 //    intMax(1, 3, 2) → 3
 //    intMax(3, 2, 1) → 3
 
-    public int intMax(int a, int b, int c) {
+    public static int intMax(int a, int b, int c) {
         int max;
         if (a > b && a > c){
             max = a;
@@ -163,7 +163,7 @@ public class WarmupOne {
 //    close10(13, 8) → 8
 //    close10(13, 7) → 0
 
-    public int close10(int a, int b) {
+    public static int close10(int a, int b) {
         if (Math.abs(a-10) < Math.abs(b-10)) {
             return a;
         }
@@ -181,7 +181,7 @@ public class WarmupOne {
 //    in3050(30, 41) → false
 //    in3050(40, 50) → true
 
-    public boolean in3050(int a, int b) {
+    public static boolean in3050(int a, int b) {
         if ((a >= 30 && a <= 40 && b >= 30 && b <= 40)) {
             return true;
         }
@@ -200,7 +200,7 @@ public class WarmupOne {
 //    max1020(19, 11) → 19
 //    max1020(11, 9) → 11
 
-    public int max1020(int a, int b) {
+    public static int max1020(int a, int b) {
         if (a >= 10 && a <= 20 && b >= 10 && b <= 20){
             if (a > b){
                 return a;
@@ -224,7 +224,7 @@ public class WarmupOne {
 //    stringE("Hello") → true
 //    stringE("Heelle") → true
 //    stringE("Heelele") → false
-  public boolean stringE(String str) {
+  public static boolean stringE(String str) {
     int count = 0;
     if (str.length()>=1) {
         for (int i = 0; i < str.length(); i++) {
@@ -247,7 +247,7 @@ public class WarmupOne {
 //    lastDigit(6, 17) → false
 //    lastDigit(3, 113) → true
 
-    public boolean lastDigit(int a, int b) {
+    public static boolean lastDigit(int a, int b) {
         return (a % 10 == b % 10);
     }
 
@@ -260,7 +260,7 @@ public class WarmupOne {
 //    endUp("hi there") → "hi thERE"
 //    endUp("hi") → "HI"
 
-    public String endUp(String str) {
+    public static String endUp(String str) {
         if (str.length() > 3) {
             String st = str.substring(str.length()-3,str.length());
             str = str.substring(0,str.length()-3);
@@ -279,7 +279,7 @@ public class WarmupOne {
 //    everyNth("abcdefg", 2) → "aceg"
 //    everyNth("abcdefg", 3) → "adg"
 
-    public String everyNth(String str, int n) {
+    public static String everyNth(String str, int n) {
         String st = "";
         for (int i = 0; i < str.length(); i += n){
             st += str.charAt(i);
