@@ -39,18 +39,18 @@ public class warmup {
 //startHi("hello hi") → false
 
 
-    static  boolean startHi(String str) {
-        String start;
-        if (str.length() > 2 || str.length() == 2){
-            start = str.substring(0,2);
-            if (start == "hi") {
-                return true;
-            } return false;
-        } return false;
-
-
-        }
-    }
+//    static  boolean startHi(String str) {
+//        String start;
+//        if (str.length() > 2 || str.length() == 2){
+//            start = str.substring(0,2);
+//            if (start == "hi") {
+//                return true;
+//            } return false;
+//        }  return false;
+//
+//
+//        }
+//    }
 
 
 
