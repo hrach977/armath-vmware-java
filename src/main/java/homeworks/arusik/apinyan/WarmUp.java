@@ -139,7 +139,112 @@ public class WarmUp {
     static boolean mixStart(String str) {
         return (str.length() >= 3 && (str.substring(1, 3).equals("ix")));
     }
+//===================================================
+//Given a string, return a string made of the first 2 chars (if present), however include first char only if it is 'o' and include the second only if it is 'z', so "ozymandias" yields "oz".
+//
+//
+//startOz("ozymandias") → "oz"
+//startOz("bzoo") → "z"
+//startOz("oxx") → "o"
 
+    static String startOz(String str) {
+        String result = "";
+
+        if (str.length() >= 1 && str.charAt(0)=='o') {
+            result = result + str.charAt(0);
+        }
+
+        if (str.length() >= 2 && str.charAt(1)=='z') {
+            result = result + str.charAt(1);
+        }
+
+        return result;
+
+    }
+    //========================================================
+    //Given three int values, a b c, return the largest.
+    //
+    //
+    //intMax(1, 2, 3) → 3
+    //intMax(1, 3, 2) → 3
+    //intMax(3, 2, 1) → 3
+    static int intMax(int a, int b, int c) {
+        int max;
+        if (a > b && a > c){
+            max = a;
+        } else if(b > c){
+            max = b;
+        } else {
+            max = c;
+        }
+        return max;
+    }
+    //=================================================
+    //Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
+    //
+    //
+    //close10(8, 13) → 8
+    //close10(13, 8) → 8
+    //close10(13, 7) → 0
+
+    static int close10(int a, int b) {
+        if(Math.abs(a - 10) == Math.abs(b - 10)){
+            return 0;
+        } else if(Math.abs(a - 10) < Math.abs(b - 10)) {
+            return a;
+        }else {
+            return b;
+        }
+    }
+    //==============================================
+    //Given 2 int values, return true if they are both in the range 30..40 inclusive,
+    // or they are both in the range 40..50 inclusive.
+    //
+    //
+    //in3050(30, 31) → true
+    //in3050(30, 41) → false
+    //in3050(40, 50) → true
+    static boolean in3050(int a, int b) {
+        return ((a >= 30 && a <= 40 && b >= 30 && b <= 40 ) || (a >= 40 && a <= 50 && b >= 40 && b <= 50 )) ? true : false;
+
+
+    }
+    //================================================
+    //Given 2 positive int values, return the larger value that is in the range 10..20 inclusive,
+    //  or return 0 if neither is in that range.
+    //
+    //
+    //max1020(11, 19) → 19
+    //max1020(19, 11) → 19
+    //max1020(11, 9) → 11
+    static int max1020(int a, int b) {
+        int res;
+        if (b > a){
+            res = a;
+            a = b;
+            b = res;
+        }
+        if (a >= 10 && a <= 20) return a;
+        if (b >= 10 && b <= 20) return b;
+        return 0;
+    }
+    //========================================
+    //Return true if the given string contains between 1 and 3 'e' chars.
+    //
+    //
+    //stringE("Hello") → true
+    //stringE("Heelle") → true
+    //stringE("Heelele") → false
+    static boolean stringE(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++){
+            if (str.charAt(i) == 'e')
+                count ++;
+        }
+        return(count >= 1 && count <= 3);
+    }
+    //==========================================
+    //
 }
 
 
