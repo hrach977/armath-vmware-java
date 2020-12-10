@@ -4,22 +4,10 @@ import javafx.scene.effect.Blend;
 
 public class Warmup4 {
     public static void main(String[] args) {
-       int[] res = post4(new int[] {2, 4, 1, 2});
-       for (int num: res) {
-           System.out.print(num + " ");
-       }
-        System.out.println();
-        int[] res1 = post4(new int[] {4, 1, 4, 2});
-        for (int num: res1) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-        int[] res2 = post4(new int[] {4, 4, 1, 2, 3});
-        for (int num: res2) {
-            System.out.print(num + " ");
-        }
-//    post4([4, 1, 4, 2]) → [2]
-//    post4([4, 4, 1, 2, 3]) → [1, 2, 3]
+       int i = 010;
+       int j = 07;
+        System.out.println(i);
+        System.out.println(j);
     }
 
 //    Return the number of even ints in the given array. Note: the % "mod" operator computes the remainder, e.g. 5 % 2 is 1.
