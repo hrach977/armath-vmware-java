@@ -17,9 +17,10 @@ public class Warmup_1 {
 //    front22("abc") → "ababcab"
 
     static String front22(String str){
+        String temp = str.substring(0,2);
         if (str.length() < 2){
             return str + str + str;
         }
-        return str.substring(0,2) + str + str.substring(0,2);
+        return temp + str + temp;
     }
 }
