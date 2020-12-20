@@ -1,6 +1,5 @@
 package lessons.warmup1;
 
-import javafx.scene.effect.Blend;
 
 public class Warmup4 {
     public static void main(String[] args) {
