@@ -7,55 +7,7 @@ package homeworks.meline.abrahamyan;
 
 import java.io.PrintStream;
 
-public class Rectangle {
-    private double side1;
-    private double side2;
-    private String color;
 
-    public Rectangle() {
-        this.side1 = 1;
-        this.side2 = 1;
-        this.color = "red";
-    }
-
-    public Rectangle(double x, double y) {
-        this.side1 = x;
-        this.side2 = y;
-        this.color = "red";
-    }
-
-    public Rectangle(double x, double y, String c) {
-        this.side1 = x;
-        this.side2 = y;
-        this.color = c;
-    }
-
-    public double getSide1() {
-        return this.side1;
-    }
-
-    public void setSide1(double side1) {
-        this.side1 = side1;
-    }
-
-    public double getSide2() {
-        return this.side2;
-    }
-
-    public void setSide2(double side1) {
-        this.side2 = this.side2;
-    }
-
-    public String getColor() {
-        return this.color;
-    }
-
-    public void setColor(String color) {
-        if (!color.equals("black")) {
-            this.color = color;
-        }
-
-    }
 
     public double getArea() {
         return this.side1 * this.side2;
